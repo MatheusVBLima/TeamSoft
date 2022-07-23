@@ -45,7 +45,7 @@ export function Aside() {
                 <img src={AddIcon} alt="Remove Item" />
               </button>
             </div>
-            <div className={styles.AddCartButton}>
+            <div className={styles.addCartButton}>
               <button onClick={handleAddItens}>Adicionar</button>
             </div>
           </div>

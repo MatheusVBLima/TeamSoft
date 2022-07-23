@@ -1,5 +1,5 @@
 import styles from "../styles/MainProduct.module.css";
-import MainImage from "../assets/foto.svg";
+import MainImage from "../assets/hamburgerFoto.svg";
 import MainImageMobile from "../assets/mobileFoto.svg";
 
 export function MainProduct() {

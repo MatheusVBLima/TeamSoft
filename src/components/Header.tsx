@@ -1,10 +1,10 @@
 import styles from "../styles/Header.module.css";
 import Icon from "../assets/DeliverizeIco.svg";
 import Logo from "../assets/DeliverizeLogo.svg";
-import ArrowDown from "../assets/ArrowDown.svg";
-import Search from "../assets/search_24px.svg";
-import UserButton from "../assets/account_circle_24px.svg";
-import CartButton from "../assets/shopping_cart_24px.svg";
+import ArrowDown from "../assets/ArrowDownIcon.svg";
+import Search from "../assets/searchIcon.svg";
+import UserButton from "../assets/userIcon.svg";
+import CartButton from "../assets/cartIcon.svg";
 
 export function Header() {
   return (
