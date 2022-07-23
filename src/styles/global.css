@@ -1,0 +1,35 @@
+:root {
+  --white: #fff; /* State/white */
+  --background-header: #f4f4f4;
+
+  --vermelho-500: #ed3237; /* Primary/default */
+  --vermelho-600: #d80000; /* Vermelho Deliverize */
+  --vermelho-700: #bc2e31; /* Vermelho Popover */
+
+  --gray-500: #656363; /* Gray/darker */
+  --gray-700: #4e4e4e; /* Gray darker */
+
+  --orange-400: #e8a634; /* Secondary/lighter */
+  --orange-500: #f09035; /* Secondary/default */
+  --orange-600: #e49700; /* Yellow Darker */
+  --orange-700: #dc6e05; /* Preço Hamburguer */
+
+  --yellow-400: rgba(253, 215, 14, 0.2); /* yellow light */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,132 @@
+.nav {
+  max-width: 75rem;
+}
+
+.header {
+  background: var(--background-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  gap: 6.875rem;
+}
+
+.logos {
+  display: flex;
+}
+
+.logos img:first-child {
+  margin-right: -8px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 53.125rem;
+  height: 3rem;
+  background: var(--white);
+  gap: 1rem;
+}
+
+.address {
+  display: flex;
+  background: var(--white);
+  height: 3rem;
+  width: 14.375rem;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.address span {
+  color: var(--vermelho-600);
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+}
+
+.address p {
+  color: var(--gray-500);
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: 700;
+}
+
+.address button {
+  cursor: pointer;
+  background: var(--white);
+  border: none;
+}
+
+.textArea input {
+  width: 21.5625rem;
+  height: 3rem;
+  resize: none;
+  border: 1px solid var(--vermelho-500);
+  border-radius: 5px;
+}
+
+.textArea input:focus {
+  outline: none;
+}
+
+.textArea input::placeholder {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  padding-left: 1.0156rem;
+}
+
+.textArea button img {
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 0.625rem;
+  flex: 1;
+}
+
+.userContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.userContainer button {
+  color: var(--vermelho-500);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.0625rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cartContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.cartContainer button {
+  color: var(--vermelho-500);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.0625rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1190px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}

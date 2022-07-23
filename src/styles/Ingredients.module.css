@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 5.5625rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+
+  border-bottom: 1px solid var(--orange-400);
+}
+
+.properties {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.properties p {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  width: 100%;
+
+  color: var(--gray-700);
+}
+
+.properties span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+
+  color: var(--orange-500);
+}
+
+.quantities {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 5.5625rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+
+  background: var(--white);
+  border: 1px solid var(--orange-500);
+  border-radius: 5px;
+}
+
+.quantities button {
+  background: var(--white);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+@media (max-width: 1190px) {
+  .properties p {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .properties span {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
