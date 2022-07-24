@@ -2,14 +2,19 @@ import styles from "../styles/Header.module.css";
 import Icon from "../assets/DeliverizeIco.svg";
 import Logo from "../assets/DeliverizeLogo.svg";
 import ArrowDown from "../assets/ArrowDownIcon.svg";
-import Search from "../assets/searchIcon.svg";
 import UserButton from "../assets/userIcon.svg";
 import CartButton from "../assets/cartIcon.svg";
+import ArrowLeft from "../assets/ArrowLeftIcon.svg";
 
 export function Header() {
   return (
     <nav>
       <div className={styles.header}>
+        <div className={styles.iconArrow}>
+          <button>
+            <img src={ArrowLeft} alt="" />
+          </button>
+        </div>
         <div className={styles.logos}>
           <img src={Icon} alt="icon" />
           <img src={Logo} alt="logo" />
@@ -31,16 +36,12 @@ export function Header() {
               type="text"
               placeholder="Busque por estabelecimentos ou produtos"
             />
-            {/*  <button>
-              <img src={Search} alt="" />
-            </button> */}
           </div>
           <div className={styles.buttons}>
             <div className={styles.userContainer}>
               <img src={UserButton} alt="" />
               <button>Entrar</button>
             </div>
-
             <div className={styles.cartContainer}>
               <img src={CartButton} alt="" />
               <button>Carrinho</button>

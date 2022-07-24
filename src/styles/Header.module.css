@@ -12,6 +12,10 @@
   gap: 6.875rem;
 }
 
+.iconArrow {
+  display: none;
+}
+
 .logos {
   display: flex;
 }
@@ -39,7 +43,7 @@
 }
 
 .address span {
-  color: var(--vermelho-600);
+  color: var(--red-600);
   font-size: 0.75rem;
   line-height: 1.5625rem;
   font-weight: 400;
@@ -62,7 +66,7 @@
   width: 21.5625rem;
   height: 3rem;
   resize: none;
-  border: 1px solid var(--vermelho-500);
+  border: 1px solid var(--red-500);
   border-radius: 5px;
   text-align: center;
 }
@@ -75,9 +79,6 @@
   color: var(--gray-500);
   font-size: 0.875rem;
   padding-left: 1.0156rem;
-}
-
-.textArea button img {
 }
 
 .buttons {
@@ -96,7 +97,7 @@
 }
 
 .userContainer button {
-  color: var(--vermelho-500);
+  color: var(--red-500);
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.0625rem;
@@ -113,7 +114,7 @@
 }
 
 .cartContainer button {
-  color: var(--vermelho-500);
+  color: var(--red-500);
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.0625rem;
@@ -125,6 +126,18 @@
 @media (max-width: 1190px) {
   .menu {
     display: none;
+  }
+  .iconArrow {
+    display: block;
+    position: fixed;
+    top: 30px;
+    left: 20px;
+  }
+
+  .iconArrow button {
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   .header {

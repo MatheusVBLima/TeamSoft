@@ -86,7 +86,12 @@ export function Aside() {
                 </div>
                 <div className={styles.addCartButton}>
                   <button onClick={handleAddItens}>Adicionar</button>
-                  {showPopover && <Popover />}
+                  {showPopover && (
+                    <Popover
+                      showPopover={showPopover}
+                      setShowPopover={setShowPopover}
+                    />
+                  )}
                 </div>
               </div>
             </>
@@ -126,7 +131,12 @@ export function Aside() {
                 </div>
                 <div className={styles.addCartButton}>
                   <button onClick={handleAddItens}>Adicionar</button>
-                  {showPopover && <Popover />}
+                  {showPopover && (
+                    <Popover
+                      showPopover={showPopover}
+                      setShowPopover={setShowPopover}
+                    />
+                  )}
                 </div>
               </div>
             </>
