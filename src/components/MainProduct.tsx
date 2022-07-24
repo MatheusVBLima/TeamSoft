@@ -3,26 +3,33 @@ import MainImage from "../assets/hamburgerFoto.svg";
 import MainImageMobile from "../assets/mobileFoto.svg";
 
 export function MainProduct() {
-  const windowSize = window.screen.width;
-
-  var screamWidth = document.documentElement.clientWidth;
-
+  const screenWidth = window.innerWidth;
   return (
     <div>
       <div className={styles.container}>
         <div className={styles.mainImage}>
-          {screamWidth > 768 ? (
-            <img src={MainImage} alt="" />
-          ) : (
-            <img src={MainImageMobile} alt="" />
-          )}
+          <img src={MainImage} alt="" />
         </div>
         <div className={styles.text}>
-          <h1>Oferta Picanha Cheddar Bacon</h1>
-          <p>
-            Hambúrguer de picanha, molho de picanha, cebola crispy, bacon,
-            queijo cheddar, molho cheddar e pão mix de gergelim
-          </p>
+          {screenWidth > 768 ? (
+            <>
+              <h1>Oferta Picanha Cheddar Bacon</h1>
+              <p>
+                Hambúrguer de picanha, molho de picanha, cebola crispy, bacon,
+                queijo cheddar, molho cheddar e pão mix de gergelim
+              </p>
+            </>
+          ) : (
+            <>
+              <h1>Oferta picanha cheddar bacon</h1>
+              <p>
+                Delicioso hambúrguer de picanha, molho de picanha, cebola
+                crispy, bacon, queijo cheddar, molho cheddar e pão mix de
+                gergelim, acompanhamento e bebida.
+              </p>
+            </>
+          )}
+
           <div className={styles.prices}>
             <span className={styles.newPrice}>R$31,99</span>
             <span className={styles.oldPrice}>R$34,95</span>

@@ -1,6 +1,7 @@
 import styles from "../styles/Ingredients.module.css";
 import AddIcon from "../assets/AddIcon.svg";
 import RemoveIcon from "../assets/RemoveIcon.svg";
+import RemoveDisabledIcon from "../assets/RemoveDisabledIcon.svg";
 import { useState } from "react";
 
 interface IngredientsProps {
@@ -16,9 +17,7 @@ export function Ingredients({ tittle, price }: IngredientsProps) {
   }
 
   function handleRemove() {
-    if (quantity > 0) {
-      setQuantity(quantity - 1);
-    }
+    setQuantity(quantity - 1);
   }
 
   return (
@@ -28,12 +27,16 @@ export function Ingredients({ tittle, price }: IngredientsProps) {
         <span>+R${price}</span>
       </div>
       <div className={styles.quantities}>
-        <button onClick={handleRemove}>
-          <img src={RemoveIcon} alt="Add Item" />
+        <button onClick={handleRemove} disabled={quantity == 0}>
+          {quantity > 0 ? (
+            <img src={RemoveIcon} alt="Remove Item" />
+          ) : (
+            <img src={RemoveDisabledIcon} alt="Remove Item" />
+          )}
         </button>
         <span>{quantity}</span>
         <button onClick={handleAdd}>
-          <img src={AddIcon} alt="Remove Item" />
+          <img src={AddIcon} alt="Add Item" />
         </button>
       </div>
     </div>

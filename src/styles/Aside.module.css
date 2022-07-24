@@ -58,6 +58,26 @@ footer {
   color: var(--grey-700);
 }
 
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.formSim {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  gap: 92%;
+}
+
+.formNao {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  gap: 92%;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -84,6 +104,10 @@ footer {
   display: flex;
   padding: 0.3rem;
   cursor: pointer;
+}
+
+.changeQuantity button:disabled {
+  cursor: not-allowed;
 }
 
 .addCartButton {
