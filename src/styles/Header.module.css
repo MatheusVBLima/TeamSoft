@@ -64,6 +64,7 @@
   resize: none;
   border: 1px solid var(--vermelho-500);
   border-radius: 5px;
+  text-align: center;
 }
 
 .textArea input:focus {

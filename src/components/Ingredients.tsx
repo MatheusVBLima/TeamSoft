@@ -7,17 +7,27 @@ import { useState } from "react";
 interface IngredientsProps {
   tittle: string;
   price: string;
+  sumTotalIngredientsQuantity: number;
+  setSumTotalIngredientsQuantity: (quantity: number) => void;
 }
 
-export function Ingredients({ tittle, price }: IngredientsProps) {
+export function Ingredients({
+  tittle,
+  price,
+  sumTotalIngredientsQuantity,
+  setSumTotalIngredientsQuantity,
+}: IngredientsProps) {
   const [quantity, setQuantity] = useState(0);
 
   function handleAdd() {
-    setQuantity(quantity + 1);
+    setSumTotalIngredientsQuantity(sumTotalIngredientsQuantity + 1);
+    setQuantity((quantity) => quantity + 1);
   }
 
   function handleRemove() {
-    setQuantity(quantity - 1);
+    setSumTotalIngredientsQuantity(sumTotalIngredientsQuantity - 1);
+
+    setQuantity((quantity) => quantity - 1);
   }
 
   return (
@@ -35,7 +45,7 @@ export function Ingredients({ tittle, price }: IngredientsProps) {
           )}
         </button>
         <span>{quantity}</span>
-        <button onClick={handleAdd}>
+        <button onClick={handleAdd} disabled={sumTotalIngredientsQuantity >= 8}>
           <img src={AddIcon} alt="Add Item" />
         </button>
       </div>
