@@ -129,7 +129,7 @@
   }
   .iconArrow {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 30px;
     left: 20px;
   }
