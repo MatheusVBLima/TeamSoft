@@ -4,7 +4,7 @@ import Logo from "../assets/DeliverizeLogo.svg";
 import ArrowDown from "../assets/ArrowDownIcon.svg";
 import UserButton from "../assets/userIcon.svg";
 import CartButton from "../assets/cartIcon.svg";
-import ArrowLeft from "../assets/arrowLeftIcon.svg";
+import ArrowLeft from "../assets/ArrowLeftIcon.svg";
 
 export function Header() {
   return (
